@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Number Guessing Game</h1>
+        
+        <div class="game-info">
+            <div>I'm thinking of a number between <span id="minNum">1</span> and <span id="maxNum">100</span></div>
+            <div>Attempts remaining: <span id="remaining">10</span></div>
+        </div>
+
+        <input type="number" id="guessField" placeholder="Enter your guess..." min="1" max="100">
+        
+        <div>
+            <button class="btn" id="submitBtn">Submit Guess</button>
+            <button class="btn" id="newGameBtn" style="display: none;">New Game</button>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div class="stats">
+            <div class="stat">
+                <strong>Attempts Used:</strong> <span id="attemptsUsed">0</span>
+            </div>
+            <div class="stat">
+                <strong>Best Score:</strong> <span id="bestScore">0</span>
+            </div>
+        </div>
+
+        <div id="previousGuesses" class="previous-guesses">
+            <strong>Your previous guesses:</strong>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
